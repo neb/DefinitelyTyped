@@ -1712,7 +1712,7 @@ declare namespace braintree {
 
     export interface TransactionRiskData {
         decision: string;
-        deviceDataCaptured: boolean;
+        deviceDataCaptured?: boolean | undefined;
         fraudServiceProvider: string;
         id: string;
     }
