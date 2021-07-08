@@ -1272,7 +1272,7 @@ declare namespace braintree {
         };
 
         addOns?: AddOn[] | undefined;
-        additionalProccessorResponse: string;
+        additionalProccessorResponse: string | null;
         amount: string;
         androidPayCard?: {
             bin: string;
@@ -1318,9 +1318,9 @@ declare namespace braintree {
         } | undefined;
         authorizationAdjustments?: AuthorizationAdjustment[] | undefined;
         authorizationExpiresAt?: string | undefined;
-        avsErrorResponseCode: string;
-        avsPostalCodeResponseCode: string;
-        avsStreetAddressResponseCode: string;
+        avsErrorResponseCode: string | null;
+        avsPostalCodeResponseCode: string | null;
+        avsStreetAddressResponseCode: string | null;
         billing?: {
             company?: string | null | undefined;
             countryCodeAlpha2?: string | null | undefined;
@@ -1490,8 +1490,8 @@ declare namespace braintree {
         status: TransactionStatus;
         statusHistory?: TransactionStatusHistory[] | undefined;
         subscription?: {
-            billingPeriodEndDate: string;
-            billingPeriodStartDate: string;
+            billingPeriodEndDate: string | null;
+            billingPeriodStartDate: string | null;
         } | undefined;
         subscriptionId?: string | null | undefined;
         taxAmount?: string | null | undefined;
@@ -1663,12 +1663,12 @@ declare namespace braintree {
     }
 
     export interface DisbursementDetails {
-        disbursementDate: string;
-        fundsHeld: boolean;
-        settlementAmount: string;
-        settlementCurrencyExchangeRate: string;
-        settlementCurrencyIsoCode: string;
-        success: boolean;
+        disbursementDate: string | null;
+        fundsHeld: boolean | null;
+        settlementAmount: string | null;
+        settlementCurrencyExchangeRate: string | null;
+        settlementCurrencyIsoCode: string | null;
+        success: boolean | null;
     }
 
     export type EscrowStatus = 'hold_pending' | 'held' | 'release_pending' | 'released' | 'refunded';
