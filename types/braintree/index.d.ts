@@ -1294,7 +1294,7 @@ declare namespace braintree {
             token: string;
             virtualCardLast4: string;
             virtualCardType: string;
-        } | undefined;
+        } | {} | undefined;
         applePayCard?: {
             bin: string;
             cardType: string;
@@ -1315,7 +1315,7 @@ declare namespace braintree {
             productId: string;
             sourceDescription: string;
             token: string;
-        } | undefined;
+        } | {} | undefined;
         authorizationAdjustments?: AuthorizationAdjustment[] | undefined;
         authorizationExpiresAt?: string | undefined;
         avsErrorResponseCode: string | null;
@@ -1432,7 +1432,7 @@ declare namespace braintree {
             token: string;
             transactionFeeAmount: string;
             transactionFeeCurrencyIsoCode: string;
-        } | undefined;
+        } | {} | undefined;
         planId?: string | null | undefined;
         processorAuthorizationCode: string;
         processorResponseCode: string;
