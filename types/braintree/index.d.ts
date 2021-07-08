@@ -1322,21 +1322,21 @@ declare namespace braintree {
         avsPostalCodeResponseCode: string;
         avsStreetAddressResponseCode: string;
         billing?: {
-            company?: string | undefined;
-            countryCodeAlpha2?: string | undefined;
-            countryCodeAlpha3?: string | undefined;
-            countryCodeNumeric?: string | undefined;
-            countryName?: string | undefined;
-            extendedAddress?: string | undefined;
-            firstName?: string | undefined;
-            id?: string | undefined;
-            lastName?: string | undefined;
-            locality?: string | undefined;
-            postalCode?: string | undefined;
-            region?: string | undefined;
-            streetAddress?: string | undefined;
+            company?: string | null | undefined;
+            countryCodeAlpha2?: string | null | undefined;
+            countryCodeAlpha3?: string | null | undefined;
+            countryCodeNumeric?: string | null | undefined;
+            countryName?: string | null | undefined;
+            extendedAddress?: string | null | undefined;
+            firstName?: string | null | undefined;
+            id?: string | null | undefined;
+            lastName?: string | null | undefined;
+            locality?: string | null | undefined;
+            postalCode?: string | null | undefined;
+            region?: string | null | undefined;
+            streetAddress?: string | null | undefined;
         } | undefined;
-        channel?: string | undefined;
+        channel?: string | null | undefined;
         createdAt: string;
         creditCard?: {
             bin: string;
@@ -1363,27 +1363,27 @@ declare namespace braintree {
         } | undefined;
         currencyIsoCode: string;
         customer: {
-            company?: string | undefined;
+            company?: string | null | undefined;
             customFields?: any;
-            email?: string | undefined;
-            fax?: string | undefined;
-            firstName?: string | undefined;
+            email?: string | null | undefined;
+            fax?: string | null | undefined;
+            firstName?: string | null | undefined;
             id: string;
-            lastName?: string | undefined;
-            phone?: string | undefined;
-            website?: string | undefined;
+            lastName?: string | null | undefined;
+            phone?: string | null | undefined;
+            website?: string | null | undefined;
         };
-        customFields?: Record<string, any> | undefined;
+        customFields?: '' | Record<string, any> | undefined;
         cvvResponseCode: string;
         descriptor?: Descriptor | undefined;
         disbursementDetails?: DisbursementDetails | undefined;
-        discountAmount?: string | undefined;
+        discountAmount?: string | null | undefined;
         discounts?: Discount[] | undefined;
         disputes?: Dispute[] | undefined;
-        escrowStatus?: EscrowStatus | undefined;
+        escrowStatus?: EscrowStatus | null | undefined;
         facilitatedDetails?: FacilitatedDetails | undefined;
         facilitatorDetails?: FacilitatorDetails | undefined;
-        gatewayRejectionReason?: GatewayRejectionReason | undefined;
+        gatewayRejectionReason?: GatewayRejectionReason | null | undefined;
         id: string;
         lineItems?: TransactionLineItem[] | undefined;
         masterpassCardDetails?: {
@@ -1433,17 +1433,17 @@ declare namespace braintree {
             transactionFeeAmount: string;
             transactionFeeCurrencyIsoCode: string;
         } | undefined;
-        planId?: string | undefined;
+        planId?: string | null | undefined;
         processorAuthorizationCode: string;
         processorResponseCode: string;
         processorResponseText: string;
         processorResponseType: TransactionProcessorResponseType;
         processorSettlementResponseCode: string;
         processorSettlementResponseText: string;
-        purchaseOrderNumber?: string | undefined;
+        purchaseOrderNumber?: string | null | undefined;
         recurring?: boolean | undefined; // Deprecated
         refundIds?: string[] | undefined;
-        refundedTransactionId?: string | undefined;
+        refundedTransactionId?: string | null | undefined;
         riskData?: TransactionRiskData | undefined;
         samsungPayCardDetails?: {
             bin: string;
@@ -1468,35 +1468,35 @@ declare namespace braintree {
             sourceCardLast4: string;
             token: string;
         } | undefined;
-        serviceFeeAmount?: string | undefined;
-        settlementBatchId?: string | undefined;
+        serviceFeeAmount?: string | null | undefined;
+        settlementBatchId?: string | null | undefined;
         shipping?: {
-            company?: string | undefined;
-            countryCodeAlpha2?: string | undefined;
-            countryCodeAlpha3?: string | undefined;
-            countryCodeNumeric?: string | undefined;
-            countryName?: string | undefined;
-            extendedAddress?: string | undefined;
-            firstName?: string | undefined;
-            id?: string | undefined;
-            lastName?: string | undefined;
-            locality?: string | undefined;
-            postalCode?: string | undefined;
-            region?: string | undefined;
-            streetAddress?: string | undefined;
+            company?: string | null | undefined;
+            countryCodeAlpha2?: string | null | undefined;
+            countryCodeAlpha3?: string | null | undefined;
+            countryCodeNumeric?: string | null | undefined;
+            countryName?: string | null | undefined;
+            extendedAddress?: string | null | undefined;
+            firstName?: string | null | undefined;
+            id?: string | null | undefined;
+            lastName?: string | null | undefined;
+            locality?: string | null | undefined;
+            postalCode?: string | null | undefined;
+            region?: string | null | undefined;
+            streetAddress?: string | null | undefined;
         } | undefined;
-        shippingAmount?: string | undefined;
-        shipsFromPostalCode?: string | undefined;
+        shippingAmount?: string | null | undefined;
+        shipsFromPostalCode?: string | null | undefined;
         status: TransactionStatus;
         statusHistory?: TransactionStatusHistory[] | undefined;
         subscription?: {
             billingPeriodEndDate: string;
             billingPeriodStartDate: string;
         } | undefined;
-        subscriptionId?: string | undefined;
-        taxAmount?: string | undefined;
+        subscriptionId?: string | null | undefined;
+        taxAmount?: string | null | undefined;
         taxExempt?: boolean | undefined;
-        threeDSecureInfo?: TransactionThreeDSecureInfo | undefined;
+        threeDSecureInfo?: TransactionThreeDSecureInfo | null | undefined;
         type: string;
         updatedAt: string;
         venmoAccount?: {
@@ -1529,7 +1529,7 @@ declare namespace braintree {
             productId: string;
             token: string;
         } | undefined;
-        voiceReferralNumber?: string | undefined;
+        voiceReferralNumber?: string | null | undefined;
     }
 
     interface ClientToken {
