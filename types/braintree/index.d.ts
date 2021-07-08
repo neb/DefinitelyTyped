@@ -1736,11 +1736,11 @@ declare namespace braintree {
         amount: string;
         status: TransactionStatus;
         timestamp: string;
-        transactionsource: TransactionSource;
+        transactionSource: TransactionSource;
         user: string;
     }
 
-    export type TransactionSource = 'Api' | 'ControlPanel' | 'Recurring';
+    export type TransactionSource = 'api' | 'control_panel' | 'recurring';
 
     export interface TransactionThreeDSecureInfo {
         enrolled: string;
